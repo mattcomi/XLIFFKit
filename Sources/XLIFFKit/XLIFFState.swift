@@ -1,4 +1,4 @@
-//  Created by Matt Comi on 6/11/2023.
+// Copyright © 2023 Matt Comi. All rights reserved.
 
 import Foundation
 
@@ -33,19 +33,4 @@ public enum XLIFFState: String, CaseIterable {
 
   /// Indicates that the item has been translated.
   case translated
-
-  case `nil`
-
-  public var sortOrder: Int {
-    switch self {
-    case .needsAdaptation, .needsReviewL10n, .needsTranslation, .new:
-      return 0
-    case .needsL10n, .needsReviewAdaptation, .needsReviewTranslation:
-      return 1
-    case .final, .signedOff, .translated:
-      return 2
-    case .nil:
-      return 3
-    }
-  }
 }

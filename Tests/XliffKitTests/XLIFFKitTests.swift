@@ -1,3 +1,5 @@
+// Copyright © 2023 Matt Comi. All rights reserved.
+
 import XCTest
 @testable import XLIFFKit
 

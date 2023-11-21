@@ -1,4 +1,4 @@
-//  Created by Matt Comi on 6/11/2023.
+// Copyright © 2023 Matt Comi. All rights reserved.
 
 import Foundation
 
