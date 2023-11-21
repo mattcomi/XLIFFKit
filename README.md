@@ -89,6 +89,8 @@ translationUnit.state = .needsReviewTranslation
 document.updateTranslationUnit(forFileUUID: file.uuid, to: translationUnit)
 ```
 
+> The UUID is not present in the XLIFF; one is generated for files and translation units. It is used to refer to and track elements in the document.
+
 After making a modification, `document.hasUnsavedChanges` will become true. Call `document.commitUnsavedChanged()` to write the changes back to the underlying XML document.
 
 **Saving changes:**
